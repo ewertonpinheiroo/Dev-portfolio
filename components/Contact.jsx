@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import contactimg from  '../public/assets/computer.jpg'
 import React, {useEffect, useState} from 'react'
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -20,7 +22,10 @@ const Contact = () => {
          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-black rounded-xl p-4 ' >
            <div className='lg:p-4 h-full' >
                <div>
-                  <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://programadoresbrasil.com.br/wp-content/uploads/2020/05/desenvolvedordeapps4.png" alt='/' />
+                  <Image
+                   className='rounded-xl hover:scale-105 ease-in duration-300'
+                   width="600" height="500"
+                   src={contactimg} />
                  </div>
                  <div>
                      <h2 className="py-2" > Ewerton Pinheiro </h2>

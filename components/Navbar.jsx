@@ -1,6 +1,7 @@
 import React, {useState , useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import logoimg from '../public/assets/code2.png'
 import {AiFillGithub, AiOutlineClose, AiOutlineMail, AiOutlineMenu, AiOutlineWhatsApp} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -52,7 +53,7 @@ const Navbar = () => {
          <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16' >
           <Link  href='/#home' >
           <Image 
-          src="/../public/assets/code2.png"
+          src={logoimg}
            alt="/" width="60" height="50"/>
           </Link>
           
@@ -90,7 +91,7 @@ const Navbar = () => {
                        <div className="flex w-full items-center justify-between" >
                       <Link href='/#home' >
                       <Image 
-                          src="/../public/assets/code1.png"
+                          src={logoimg}
                           alt="/" width="60" height="50" />
                       </Link>
                       
